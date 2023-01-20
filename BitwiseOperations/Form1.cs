@@ -74,69 +74,7 @@ namespace BitwiseOperations
         {
             
         }
-
-        private void radioButton8_CheckedChanged(object sender, EventArgs e)
-        {
-            if (String.IsNullOrEmpty(textBox3.Text) | String.IsNullOrEmpty(textBox4.Text))
-            {
-                textBox3.Text = "16";
-                textBox4.Text = "2";
-                int num1 = Convert.ToInt32(textBox3.Text);
-                int num2 = Convert.ToInt32(textBox4.Text);
-                int result = num1 & num2;
-                textBox5.Text = result.ToString();
-            
-            }
-            else
-            {
-                int num1 = Convert.ToInt32(textBox3.Text);
-                int num2 = Convert.ToInt32(textBox4.Text);
-                int result = num1 & num2;
-                textBox5.Text = result.ToString();
-             
-            }
-
-        }
-
-        private void radioButton9_CheckedChanged(object sender, EventArgs e)
-        {
-            if (String.IsNullOrEmpty(textBox3.Text) | String.IsNullOrEmpty(textBox4.Text))
-            {
-                textBox3.Text = "16";
-                textBox4.Text = "2";
-                int num1 = Convert.ToInt32(textBox3.Text);
-                int num2 = Convert.ToInt32(textBox4.Text);
-                int result = num1 | num2;
-                textBox5.Text = result.ToString();
-            }
-            else
-            {
-                int num1 = Convert.ToInt32(textBox3.Text);
-                int num2 = Convert.ToInt32(textBox4.Text);
-                int result = num1 | num2;
-                textBox5.Text = result.ToString();
-            }
-        }
-
-        private void radioButton10_CheckedChanged(object sender, EventArgs e)
-        {
-            if (String.IsNullOrEmpty(textBox3.Text) | String.IsNullOrEmpty(textBox4.Text))
-            {
-                textBox3.Text = "16";
-                textBox4.Text = "2";
-                int num1 = Convert.ToInt32(textBox3.Text);
-                int num2 = Convert.ToInt32(textBox4.Text);
-                int result = num1 ^ num2;
-                textBox5.Text = result.ToString();
-            }
-            else
-            {
-                int num1 = Convert.ToInt32(textBox3.Text);
-                int num2 = Convert.ToInt32(textBox4.Text);
-                int result = num1 ^ num2;
-                textBox5.Text = result.ToString();
-            }
-        }
+    
 
         private void radioButton4_CheckedChanged(object sender, EventArgs e)
         {
@@ -148,7 +86,7 @@ namespace BitwiseOperations
                 int num1 = Convert.ToInt32(textBox3.Text);
                 int num2 = Convert.ToInt32(textBox4.Text);
                 int result = num1 << num2;
-                int result2 = result << 1;
+                int result2 = (result << 1)-1;
                 textBox5.Text = result2.ToString();
             }
             else
@@ -156,7 +94,7 @@ namespace BitwiseOperations
                 int num1 = Convert.ToInt32(textBox3.Text);
                 int num2 = Convert.ToInt32(textBox4.Text);
                 int result = num1 << num2;
-                int result2 = result << 1;
+                int result2 = (result << 1)-1;
                 textBox5.Text = result2.ToString();
             }
         }
@@ -171,7 +109,7 @@ namespace BitwiseOperations
                 int num1 = Convert.ToInt32(textBox3.Text);
                 int num2 = Convert.ToInt32(textBox4.Text);
                 int result = num1 << num2;
-                int result2 = result << num2;
+                int result2 = (result << num2);
                 textBox5.Text = result2.ToString();
             }
             else
@@ -179,7 +117,7 @@ namespace BitwiseOperations
                 int num1 = Convert.ToInt32(textBox3.Text);
                 int num2 = Convert.ToInt32(textBox4.Text);
                 int result = num1 << num2;
-                int result2 = result << num2;
+                int result2 = (result << num2)-1;
                 textBox5.Text = result2.ToString();
             }
         }
@@ -234,6 +172,71 @@ namespace BitwiseOperations
                 result = result + (num1 << num2) + (num1 << 1) + (num2 << 1) + num2;
                 textBox5.Text = result.ToString();
             }
-        }     
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            textBox5.Clear();
+            if (String.IsNullOrEmpty(textBox3.Text) | String.IsNullOrEmpty(textBox4.Text))
+            {
+                textBox3.Text = "16";
+                textBox4.Text = "2";
+                int num1 = Convert.ToInt32(textBox3.Text);
+                int num2 = Convert.ToInt32(textBox4.Text);
+                int result = num1 & num2;
+                textBox5.Text = result.ToString();
+
+            }
+            else
+            {
+                int num1 = Convert.ToInt32(textBox3.Text);
+                int num2 = Convert.ToInt32(textBox4.Text);
+                int result = num1 & num2;
+                textBox5.Text = result.ToString();
+
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            textBox5.Clear();
+            if (String.IsNullOrEmpty(textBox3.Text) | String.IsNullOrEmpty(textBox4.Text))
+            {
+                textBox3.Text = "16";
+                textBox4.Text = "2";
+                int num1 = Convert.ToInt32(textBox3.Text);
+                int num2 = Convert.ToInt32(textBox4.Text);
+                int result = num1 | num2;
+                textBox5.Text = result.ToString();
+            }
+            else
+            {
+                int num1 = Convert.ToInt32(textBox3.Text);
+                int num2 = Convert.ToInt32(textBox4.Text);
+                int result = num1 | num2;
+                textBox5.Text = result.ToString();
+            }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            textBox5.Clear();
+            if (String.IsNullOrEmpty(textBox3.Text) | String.IsNullOrEmpty(textBox4.Text))
+            {
+                textBox3.Text = "16";
+                textBox4.Text = "2";
+                int num1 = Convert.ToInt32(textBox3.Text);
+                int num2 = Convert.ToInt32(textBox4.Text);
+                int result = num1 ^ num2;
+                textBox5.Text = result.ToString();
+            }
+            else
+            {
+                int num1 = Convert.ToInt32(textBox3.Text);
+                int num2 = Convert.ToInt32(textBox4.Text);
+                int result = num1 ^ num2;
+                textBox5.Text = result.ToString();
+            }
+        }
     }
 }

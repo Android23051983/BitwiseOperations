@@ -45,9 +45,9 @@
             this.radioButton7 = new System.Windows.Forms.RadioButton();
             this.label5 = new System.Windows.Forms.Label();
             this.textBox5 = new System.Windows.Forms.TextBox();
-            this.radioButton8 = new System.Windows.Forms.RadioButton();
-            this.radioButton9 = new System.Windows.Forms.RadioButton();
-            this.radioButton10 = new System.Windows.Forms.RadioButton();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -215,7 +215,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(20, 394);
+            this.label5.Location = new System.Drawing.Point(20, 406);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(278, 18);
             this.label5.TabIndex = 15;
@@ -226,61 +226,52 @@
             this.textBox5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox5.Location = new System.Drawing.Point(23, 412);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(3, 0, 3, 0);
+            this.textBox5.Location = new System.Drawing.Point(23, 424);
+            this.textBox5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(400, 26);
+            this.textBox5.Size = new System.Drawing.Size(390, 26);
             this.textBox5.TabIndex = 16;
             this.textBox5.Text = "Выберите число которое хотите получить";
             // 
-            // radioButton8
+            // button1
             // 
-            this.radioButton8.AutoSize = true;
-            this.radioButton8.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.radioButton8.Location = new System.Drawing.Point(293, 329);
-            this.radioButton8.Name = "radioButton8";
-            this.radioButton8.Size = new System.Drawing.Size(56, 22);
-            this.radioButton8.TabIndex = 17;
-            this.radioButton8.TabStop = true;
-            this.radioButton8.Text = "AND";
-            this.radioButton8.UseVisualStyleBackColor = true;
-            this.radioButton8.CheckedChanged += new System.EventHandler(this.radioButton8_CheckedChanged);
+            this.button1.Location = new System.Drawing.Point(323, 265);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(97, 40);
+            this.button1.TabIndex = 20;
+            this.button1.Text = "AND";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // radioButton9
+            // button2
             // 
-            this.radioButton9.AutoSize = true;
-            this.radioButton9.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.radioButton9.Location = new System.Drawing.Point(263, 369);
-            this.radioButton9.Name = "radioButton9";
-            this.radioButton9.Size = new System.Drawing.Size(46, 22);
-            this.radioButton9.TabIndex = 18;
-            this.radioButton9.TabStop = true;
-            this.radioButton9.Text = "OR";
-            this.radioButton9.UseVisualStyleBackColor = true;
-            this.radioButton9.CheckedChanged += new System.EventHandler(this.radioButton9_CheckedChanged);
+            this.button2.Location = new System.Drawing.Point(323, 357);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(97, 40);
+            this.button2.TabIndex = 21;
+            this.button2.Text = "OR";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // radioButton10
+            // button3
             // 
-            this.radioButton10.AutoSize = true;
-            this.radioButton10.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.radioButton10.Location = new System.Drawing.Point(324, 369);
-            this.radioButton10.Name = "radioButton10";
-            this.radioButton10.Size = new System.Drawing.Size(56, 22);
-            this.radioButton10.TabIndex = 19;
-            this.radioButton10.TabStop = true;
-            this.radioButton10.Text = "XOR";
-            this.radioButton10.UseVisualStyleBackColor = true;
-            this.radioButton10.CheckedChanged += new System.EventHandler(this.radioButton10_CheckedChanged);
+            this.button3.Location = new System.Drawing.Point(323, 311);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(97, 40);
+            this.button3.TabIndex = 22;
+            this.button3.Text = "XOR";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.ClientSize = new System.Drawing.Size(484, 465);
-            this.Controls.Add(this.radioButton10);
-            this.Controls.Add(this.radioButton9);
-            this.Controls.Add(this.radioButton8);
+            this.ClientSize = new System.Drawing.Size(474, 482);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox5);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.radioButton7);
@@ -328,9 +319,9 @@
         protected internal System.Windows.Forms.TextBox textBox3;
         protected internal System.Windows.Forms.TextBox textBox4;
         protected internal System.Windows.Forms.TextBox textBox5;
-        protected internal System.Windows.Forms.RadioButton radioButton8;
-        protected internal System.Windows.Forms.RadioButton radioButton9;
-        protected internal System.Windows.Forms.RadioButton radioButton10;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
     }
 }
 
